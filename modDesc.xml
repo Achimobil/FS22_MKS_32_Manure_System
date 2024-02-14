@@ -11,7 +11,11 @@
 
 Kapazizäten: 32.000 / 64.0000 / 200.000]]></de>
 	</description>
-	<iconFilename>store_mks32.png</iconFilename>
+    <multiplayer supported="true"/>
+	<iconFilename>icon_mks32.png</iconFilename>
+    <brands>
+        <brand name="FARMERTOOLS" title="Farmer Tools" image="store/brand_FarmerTools.dds"/>
+    </brands>
 	<storeItems>
 		<storeItem xmlFilename="mks32.xml"/>
 	</storeItems>

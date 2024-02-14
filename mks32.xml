@@ -3,7 +3,7 @@
 	<annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 	<storeData>
 		<name>
-			<en>MKS 32</en>
+			<en>MKS 32 Manure System</en>
 		</name>
 		<specs>
 			<combination filterCategory="trucks"/>
@@ -11,25 +11,20 @@
 		</specs>
 		<functions>
 			<function>$l10n_function_tank</function>
+			<function>Manure System</function>
 		</functions>
-		<image>store_mks32.dds</image>
+		<image>$data/vehicles/lizard/mks32/store_mks32.dds</image>
 		<price>68000</price>
 		<lifetime>600</lifetime>
 		<rotation>0</rotation>
-		<brand>LIZARD</brand>
+		<brand>FARMERTOOLS</brand>
 		<category>animals</category>
 		<shopTranslationOffset>0 0.093 0</shopTranslationOffset>
 		<shopRotationOffset>-0.503 0 0</shopRotationOffset>
-		<vertexBufferMemoryUsage>1841920</vertexBufferMemoryUsage>
-		<indexBufferMemoryUsage>337152</indexBufferMemoryUsage>
-		<textureMemoryUsage>1376256</textureMemoryUsage>
-		<instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-		<instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-		<audioMemoryUsage>0</audioMemoryUsage>
 	</storeData>
 	<base>
 		<typeDesc>$l10n_typeDesc_trailer</typeDesc>
-		<filename>mks32.i3d</filename>
+		<filename>$data/vehicles/lizard/mks32/mks32.i3d</filename>
 		<size width="3.7" length="12" height="4.1"/>
 		<components maxMass="32000">
 			<component centerOfMass="0 0.6 -1" solverIterationCount="10" mass="6800"/>
@@ -37,30 +32,21 @@
 		<schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
 		<mapHotspot type="TRAILER"/>
 	</base>
-	
-	
 	<manureSystem hasConnectors="true" hasPumpMotor="true" hasFillArm="false"/>
-	
-	
 	<manureSystemConnectors>
-		<!-- <connector type="COUPLING" linkNode="licensePlateBack" createNode="true" position="3.7 0.5 0.85" rotation="0 90 0"/> -->
 		<connector type="COUPLINGFERTILIZER">
 			<sharedSet createNode="true" linkNode="dischargeNode" id="3" rotation="90 75 -90" position="0 0.897 0.59">
 				<connector type="CONNECTOR_1"/>
 			</sharedSet>
 		</connector>
 	</manureSystemConnectors>
-	
-	
-	<manureSystemPumpMotor isStandalone="false" litersPerSecond="250" toReachMaxEfficiencyTime="1000">
+	<manureSystemPumpMotor isStandalone="false" litersPerSecond="1000" toReachMaxEfficiencyTime="5000">
 		<sounds>
 			<pump template="SLURRY_02">
 				<pitch indoor="0.85" outdoor="0.75"/>
 			</pump>
 		</sounds>
 	</manureSystemPumpMotor>
-	
-	
 	<wheels>
 		<wheelConfigurations>
 			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
@@ -146,21 +132,21 @@
 	</animations>
 	<fillUnit>
 		<fillUnitConfigurations>
-			<fillUnitConfiguration name="Realistic">
+			<fillUnitConfiguration name="Realistic" vehicleName="MKS 32 MS">
 				<fillUnits>
 					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MILK WATER LIQUIDFERTILIZER HERBICIDE" capacity="32000" allowAILoading="true">
 						<exactFillRootNode node="exactFillRootNode"/>
 					</fillUnit>
 				</fillUnits>
 			</fillUnitConfiguration>
-			<fillUnitConfiguration name="Double">
+			<fillUnitConfiguration name="Double" vehicleName="MKS 64 MS">
 				<fillUnits>
 					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MILK WATER LIQUIDFERTILIZER HERBICIDE" capacity="64000" allowAILoading="true">
 						<exactFillRootNode node="exactFillRootNode"/>
 					</fillUnit>
 				</fillUnits>
 			</fillUnitConfiguration>
-			<fillUnitConfiguration name="Phantastic">
+			<fillUnitConfiguration name="Phantastic" vehicleName="MKS 200 MS">
 				<fillUnits>
 					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MILK WATER LIQUIDFERTILIZER HERBICIDE" capacity="200000" allowAILoading="true">
 						<exactFillRootNode node="exactFillRootNode"/>
