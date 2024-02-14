@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="79">
+    <author>User</author>
+    <version>0.1.0.0</version>
+    <title>
+        <en>My Mod Name</en>
+    </title>
+    <description>
+        <en>My Mod Description</en>
+    </description>
+    <iconFilename>store_mks32.png</iconFilename>
+    <storeItems>
+        <storeItem xmlFilename="mks32.xml"/>
+    </storeItems>
+</modDesc>
