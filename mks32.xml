@@ -35,8 +35,15 @@
 	<manureSystem hasConnectors="true" hasPumpMotor="true" hasFillArm="false"/>
 	<manureSystemConnectors>
 		<connector type="COUPLINGFERTILIZER">
-			<sharedSet createNode="true" linkNode="dischargeNode" id="3" rotation="90 75 -90" position="0 0.897 0.59">
+			<sharedSet node="fertilizerConnector" id="3">
 				<connector type="CONNECTOR_1"/>
+			</sharedSet>
+		</connector>
+		<connector type="COUPLING">
+			<sharedSet node="manureConnector" id="2">
+				<connector type="CONNECTOR_1"/>
+				<!-- <valve type="8INCH_BRASS"/> -->
+				<!-- <handle type="HANDLE_NEW"/> -->
 			</sharedSet>
 		</connector>
 	</manureSystemConnectors>
@@ -134,21 +141,21 @@
 		<fillUnitConfigurations>
 			<fillUnitConfiguration name="Realistic" vehicleName="MKS 32 MS">
 				<fillUnits>
-					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MILK WATER LIQUIDFERTILIZER HERBICIDE" capacity="32000" allowAILoading="true">
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="LIQUID SPRAYER SLURRYTANK" capacity="32000" allowAILoading="true">
 						<exactFillRootNode node="exactFillRootNode"/>
 					</fillUnit>
 				</fillUnits>
 			</fillUnitConfiguration>
 			<fillUnitConfiguration name="Double" vehicleName="MKS 64 MS">
 				<fillUnits>
-					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MILK WATER LIQUIDFERTILIZER HERBICIDE" capacity="64000" allowAILoading="true">
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="LIQUID SPRAYER SLURRYTANK" capacity="64000" allowAILoading="true">
 						<exactFillRootNode node="exactFillRootNode"/>
 					</fillUnit>
 				</fillUnits>
 			</fillUnitConfiguration>
 			<fillUnitConfiguration name="Phantastic" vehicleName="MKS 200 MS">
 				<fillUnits>
-					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MILK WATER LIQUIDFERTILIZER HERBICIDE" capacity="200000" allowAILoading="true">
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="LIQUID SPRAYER SLURRYTANK" capacity="200000" allowAILoading="true">
 						<exactFillRootNode node="exactFillRootNode"/>
 					</fillUnit>
 				</fillUnits>
@@ -201,9 +208,11 @@
         <i3dMapping id="airYellow" node="0>0|0|1|1" />
         <i3dMapping id="electric" node="0>0|0|1|2" />
         <i3dMapping id="electric_cover" node="0>0|0|1|2|0|0" />
-        <i3dMapping id="support" node="0>0|0|2" />
-        <i3dMapping id="wheelChock02" node="0>0|0|3|0" />
-        <i3dMapping id="wheelChock03" node="0>0|0|3|1" />
+        <i3dMapping id="fertilizerConnector" node="0>0|0|2|0" />
+        <i3dMapping id="manureConnector" node="0>0|0|2|1" />
+        <i3dMapping id="support" node="0>0|0|3" />
+        <i3dMapping id="wheelChock02" node="0>0|0|4|0" />
+        <i3dMapping id="wheelChock03" node="0>0|0|4|1" />
         <i3dMapping id="dischargeNode" node="0>0|1|0" />
         <i3dMapping id="dischargeTrigger" node="0>0|1|1" />
         <i3dMapping id="exactFillRootNode" node="0>0|1|2" />

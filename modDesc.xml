@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="79">
-	<author>User</author>
-	<version>0.1.0.0</version>
+	<author>Achimobil</author>
+	<version>0.2.0.0</version>
 	<title>
 		<en>MKS 32 Manure System</en>
 	</title>
@@ -9,7 +9,8 @@
 		<en><![CDATA[This is the MKS 32 with Manure System, extended Color choice and selectable capacity from realistic to unrealistic]]></en>
 		<de><![CDATA[Dies ist der MKS 32 mit Manure System, erweiterter Farbauswahl und wählbarer Kapazität von realistisch bis unrealistisch.
 
-Kapazizäten: 32.000 / 64.0000 / 200.000]]></de>
+Kapazitäten: 32.000 / 64.0000 / 200.000
+Transportiert alle korrekt in den Kategorien eingetragenen Flüssigkeiten]]></de>
 	</description>
     <multiplayer supported="true"/>
 	<iconFilename>icon_mks32.png</iconFilename>
