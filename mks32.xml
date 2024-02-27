@@ -131,7 +131,7 @@
 	</connectionHoses>
 	<animations>
 		<animation name="moveSupport">
-			<part node="support" startTime="0.0" endTime="0.15" startTrans="0 0.23 0" endTrans="0 -0.255 0"/>
+			<part node="support" startTime="0.0" endTime="0.25" startTrans="0 0.36 0" endTrans="0 -0.125 0"/>
 			<sound template="clackVar6" startTime="0.01" direction="-1" volumeScale="1.6" pitchScale="0.8" linkNode="attacherJoint"/>
 			<sound template="clackVar4" startTime="0.01" direction="-1" volumeScale="1.2" pitchScale="1.5" linkNode="attacherJoint"/>
 			<sound template="clackVar6" startTime="0.14" direction="1" volumeScale="1.6" pitchScale="0.8" linkNode="attacherJoint"/>
