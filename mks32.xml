@@ -33,12 +33,14 @@
 		<mapHotspot type="TRAILER"/>
 	</base>
 	<manureSystem hasConnectors="true" hasPumpMotor="true" hasFillArm="false"/>
+	
 	<manureSystemConnectors>
 		<connector type="COUPLINGFERTILIZER">
 			<sharedSet node="fertilizerConnector" id="3">
 				<connector type="CONNECTOR_1"/>
 			</sharedSet>
 		</connector>
+		
 		<connector type="COUPLING">
 			<sharedSet node="manureConnector" id="2">
 				<connector type="CONNECTOR_1"/>
@@ -46,7 +48,19 @@
 				<!-- <handle type="HANDLE_NEW"/> -->
 			</sharedSet>
 		</connector>
+		
+		<connector type="COUPLING" node="manureDock" isParkPlace="true">
+			<parkPlaces>
+				<parkPlace length="3" startTransOffset="0 0 0" startRotOffset="0 0 0" endTransOffset="0 0 0" endRotOffset="-25 0 0">
+					<deformer linkNode="manureDock" createNode="true" position="0.005 -0.026 1.633"/>
+				</parkPlace>
+				<parkPlace length="5" startTransOffset="0 0 0" startRotOffset="0 0 0" endTransOffset="0 0 0" endRotOffset="-15 0 0">
+					<deformer linkNode="manureDock" createNode="true" position="0.012 -0.078 1.856"/>
+				</parkPlace>
+			</parkPlaces>
+		</connector>
 	</manureSystemConnectors>
+	
 	<manureSystemPumpMotor isStandalone="false" litersPerSecond="1000" toReachMaxEfficiencyTime="5000">
 		<sounds>
 			<pump template="SLURRY_02">
@@ -210,6 +224,7 @@
         <i3dMapping id="electric_cover" node="0>0|0|1|2|0|0" />
         <i3dMapping id="fertilizerConnector" node="0>0|0|2|0" />
         <i3dMapping id="manureConnector" node="0>0|0|2|1" />
+        <i3dMapping id="manureDock" node="0>0|0|2|2" />
         <i3dMapping id="support" node="0>0|0|3" />
         <i3dMapping id="wheelChock02" node="0>0|0|4|0" />
         <i3dMapping id="wheelChock03" node="0>0|0|4|1" />
