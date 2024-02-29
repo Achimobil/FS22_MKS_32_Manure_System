@@ -76,7 +76,7 @@
           <TransformGroup name="fillUnit" rotation="-90 -0 0" nodeId="40">
             <TransformGroup name="dischargeNode" translation="0 0.862 -5.878" nodeId="41"/>
             <Shape shapeId="6" name="dischargeTrigger" rotation="90 -0 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="42" materialIds="1" castsShadows="true" receiveShadows="true" nonRenderable="true" renderInvisible="true"/>
-            <Shape shapeId="7" name="exactFillRootNode" rotation="90 -0 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="43" materialIds="1" castsShadows="true" receiveShadows="true" nonRenderable="true" renderInvisible="true"/>
+            <Shape shapeId="7" name="exactFillRootNode" rotation="90 -0 0" visibility="false" kinematic="true" compound="true" collisionMask="1073741824" nodeId="43" materialIds="1" castsShadows="true" receiveShadows="true" nonRenderable="true" renderInvisible="true"/>
             <Shape shapeId="8" name="fillTrigger" rotation="90 -0 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="44" materialIds="1" castsShadows="true" receiveShadows="true" nonRenderable="true" renderInvisible="true"/>
           </TransformGroup>
           <TransformGroup name="licensePlateBack" translation="0 -5.736 -0.63" rotation="-90 -3.78166e-13 180" nodeId="45"/>
@@ -121,7 +121,7 @@
           </TransformGroup>
           <TransformGroup name="visuals" rotation="-90 -0 0" nodeId="77">
             <Shape shapeId="9" name="grid" rotation="90 -0 0" clipDistance="300" nodeId="78" materialIds="3" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="10" name="hosesCollisionLeft" translation="0.976479 1.25 -2.39965" rotation="0 -0 -35" kinematic="true" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="79" materialIds="1" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="10" name="hosesCollisionLeft" translation="0.976479 1.25 -2.39965" rotation="0 -0 -35" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="79" materialIds="1" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <Shape shapeId="10" name="hosesCollisionRight" translation="-1.01523 1.25 -2.39965" rotation="0 -0 35" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="80" materialIds="1" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <Shape shapeId="11" name="hosesHolder" translation="0 0 1.84255" rotation="90 -0 0" clipDistance="300" nodeId="81" materialIds="4" castsShadows="true" receiveShadows="true"/>
             <Shape shapeId="12" name="reflectorDecal" rotation="90 -0 0" clipDistance="50" nodeId="82" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
