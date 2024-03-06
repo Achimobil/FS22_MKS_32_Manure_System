@@ -1,18 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="79">
 	<author>Achimobil</author>
-	<version>0.3.2.0</version>
+	<version>1.0.0.0</version>
 	<title>
 		<en>MKS 32 Manure System</en>
 	</title>
 	<description>
-		<en><![CDATA[This is the MKS 32 with Manure System, extended Color choice and selectable capacity from realistic to unrealistic]]></en>
+		<en><![CDATA[This is the MKS 32 with Manure System, extended Color choice and selectable capacity from realistic to unrealistic.
+
+Price: 68.000$
+Capacities: 32.000 / 64.0000 / 200.000
+Colour selection: Standard colours can now be selected
+Transportable: All fluids correctly entered in the categories (LIQUID SPRAYER SLURRYTANK).
+Hose transport: Connections for both hoses have been installed. A slurry hose can be attached on the left and a fertiliser hose on the right for transport.
+]]></en>
 		<de><![CDATA[Dies ist der MKS 32 mit Manure System, erweiterter Farbauswahl und wählbarer Kapazität von realistisch bis unrealistisch.
 
+Preis: 68.000€
 Kapazitäten: 32.000 / 64.0000 / 200.000
-Transportiert alle korrekt in den Kategorien eingetragenen Flüssigkeiten.
-Links kann ein dicker und rechts ein Dünner Schlauch zum Transport abgelegt werden.
-Es wurden Anschlüsse für beide Schläuche verbaut.
+Farbauswahl: Standard Farben können nun ausgewählt werden
+Transportiert: Alle korrekt in den Kategorien eingetragenen Flüssigkeiten (LIQUID SPRAYER SLURRYTANK).
+Schlauchtmitnahme: Es wurden Anschlüsse für beide Schläuche verbaut. Links kann ein Gülleschlauch und rechts ein Düngerchlauch zum Transport angehängt werden.
 ]]></de>
 	</description>
     <multiplayer supported="true"/>
